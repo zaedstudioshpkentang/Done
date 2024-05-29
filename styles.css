@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.action-bar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    font-size: 18px;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 400px;
+    height: 100%;
+    max-height: 600px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.coin-frame {
+    position: relative;
+    width: 90%;
+    height: 90%;
+    background-color: #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #aaa;
+    border-radius: 10px;
+}
+
+.coin {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('done.png');
+    background-size: cover;
+    cursor: pointer;
+    outline: none; /* Remove the default outline */
+    border: none; /* Remove any default border */
+    user-select: none; /* Prevent text selection */
+}
+
+.coin:focus {
+    outline: none; /* Ensure focus does not add an outline */
+}
